@@ -8,7 +8,11 @@
 // output("------------");
 
 // // nested arrays
-// arr = [["Ich","bin","Max"],["Ich","bin","Moritz"]];
+// arr =   [
+//                 ["Ich","bin","Max"],
+//                 ["Ich","bin","Moritz"]
+//         ];
+
 // output(arr[0][2]);
 // output(arr[1][2]);
 // output("------------");
@@ -20,8 +24,32 @@
 //        }   
 // }
 
-
 /***** Objekte 1 Daten/Funktionen *******/
+
+let person = 
+                {
+                        firstName:"Muhammed",
+                        familyName: "Dakkak",
+                        salary:[120000,160000],
+                        permission:true,
+                        sayHello:
+                        function(){
+                                return "Hi, ich bin " + 
+                                this.firstName + "!";
+                        }
+                };
+
+// output(person);
+// output(person.firstName);
+// output(person.familyName);
+
+const txt =     "Ich bin " + person.firstName + " " +
+                person.familyName + " und verdiene " +
+                person.salary[1] + " p.a."
+
+output(txt);
+output(person.sayHello());
+
 
 
 
